@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
-from datetime import timedelta, datetime
-from icalendar import Calendar, Event
-from config import RULES, ICAL_URL
-import requests
-import pytz
 import uuid
+from datetime import datetime, timedelta
+
+import pytz
+import requests
+from icalendar import Calendar, Event
+
+from config import ICAL_URL, RULES
 
 # === CONFIGURATION ===
 OUTPUT_FILE = "sirius_modified.ics"
