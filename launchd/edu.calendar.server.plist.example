@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>edu.calendar.server</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>__UV_PATH__</string>
+      <string>run</string>
+      <string>python</string>
+      <string>-m</string>
+      <string>app.server</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key>
+      <string>__PATH__</string>
+      <key>CALENDAR_ICAL_URL</key>
+      <string>__UPSTREAM_CALENDAR_URL__</string>
+      <key>SIRIUS_CALENDAR_CONFIG</key>
+      <string>__PROJECT_ROOT__/config.toml</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true />
+
+    <key>WorkingDirectory</key>
+    <string>__PROJECT_ROOT__</string>
+
+    <key>KeepAlive</key>
+    <true />
+
+    <key>StandardOutPath</key>
+    <string>__PROJECT_ROOT__/logs/server.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>__PROJECT_ROOT__/logs/server.err.log</string>
+  </dict>
+</plist>

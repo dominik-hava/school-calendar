@@ -1,0 +1,81 @@
+[calendar]
+timezone = "Europe/Prague"
+
+[http]
+# Timeout values are in seconds
+timeout_seconds = 3.05
+read_timeout_seconds = 5.0
+max_retries = 2
+backoff_seconds = 2.0
+
+[serve]
+host = "0.0.0.0"
+port = 9300
+tls_cert = "tls/cert.pem"
+tls_key = "tls/key.pem"
+
+[[rules]]
+category_primary = "BI-LA1.21"
+category_secondary = "přednáška"
+new_day = "Wednesday"
+new_time_start = "15:30"
+duration_minutes = 90
+
+[[rules]]
+category_primary = "BI-LA1.21"
+category_secondary = "cvičení"
+new_day = "Thursday"
+new_time_start = "11:45"
+duration_minutes = 45
+
+[[rules]]
+category_primary = "BI-UOS.21"
+category_secondary = "přednáška"
+new_day = "Tuesday"
+new_time_start = "16:15"
+duration_minutes = 90
+
+[[rules]]
+category_primary = "BI-UOS.21"
+category_secondary = "cvičení"
+new_day = "Wednesday"
+new_time_start = "18:00"
+duration_minutes = 90
+
+
+[[rules]]
+category_primary = "BI-DML.21"
+category_secondary = "přednáška"
+new_day = "Monday"
+new_time_start = "14:30"
+duration_minutes = 90
+
+[[rules]]
+category_primary = "BI-TZP.21"
+category_secondary = "přednáška"
+new_day = "Monday"
+new_time_start = "16:15"
+duration_minutes = 90
+
+[[rules]]
+category_primary = "BI-PA1.21"
+category_secondary = "laboratoř"
+new_day = "Friday"
+new_time_start = "11:00"
+duration_minutes = 90
+
+[[rules]]
+category_primary = "BI-DML.21"
+category_secondary = "cvičení"
+new_day = "Wednesday"
+new_time_start = "14:30"
+duration_minutes = 45
+
+
+[[recurring_events]]
+summary = "Beach volejbal"
+start = "2025-09-24T11:00:00"
+duration_minutes = 60
+freq = "WEEKLY"
+count = 13
+timezone = "Europe/Prague"

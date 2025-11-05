@@ -8,3 +8,15 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Local TLS materials (not committed)
+tls/
+
+# Generated calendar feed
+calendar.ics
+
+# Logs with potentially sensitive data
+logs/
+
+# Personal launchd configuration with credentials
+launchd/*.plist
